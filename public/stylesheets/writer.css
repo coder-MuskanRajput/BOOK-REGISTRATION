@@ -1,0 +1,72 @@
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+    color: black;
+}
+.heading span{
+    background-color: orangered;
+    color: white;
+    display:inline-block;
+    padding: .5rem 3rem;
+    border-radius: 4px;
+}
+.writer{
+    margin: 0 100px;
+}
+.writer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 2.5rem;
+}
+.writer .box-container .box{
+    padding: 2rem  4rem ;
+    background-color: white;
+    outline:.1rem solid rgba(0, 0, 0, .1);
+    outline-offset:-1rem;
+    text-align: center;
+    box-shadow:0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+.writer .box-container .box:hover{
+    outline: .1rem solid black;
+    outline-offset: 0rem;
+}
+.writer .box-container .box img{
+   width: 20rem;
+   height: 20rem;
+   border-radius: 50%;
+}
+.writer .box-container .box h3{
+    font-size: 2rem;
+    color: black;
+    line-height: 1.5;
+    padding-bottom: 0.5rem;
+}
+.writer .box-container .box .stars i{
+    color: orangered;
+}
+.writer .box-container .box p{
+    padding: 1rem 0;
+    line-height: 1.5;
+    color: #666;
+    font-size: 1.2rem;
+}
+.social-media{
+    margin-top: 20px;
+}
+.writer .box-container .box .social-media i{
+    font-size: 15px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #4475e2;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all .3s;
+}
+.social-media i:hover{
+    background-color:#4475e2 ;
+    color: white;
+}

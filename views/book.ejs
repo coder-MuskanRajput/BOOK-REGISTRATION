@@ -1,0 +1,23 @@
+<%-include("partials/header.ejs")%>
+<%-include("partials/nav.ejs")%>
+<link rel="stylesheet" href="/stylesheets/book.css">
+  <div class="cards">
+        <% Book.forEach(function(elem , i){ %>
+        <div class="card">
+            <h1><%=elem.title%></h1>
+            <img class="image" src="<%=elem.img%>" alt="">
+            <p><span><u>Author :</u></span><%=elem.author%></p>
+             <p><span><u>Country :</u></span><%=elem.country%></p>
+            <p><span> <u>Language :</u> </span><%=elem.language%></p>
+            <p><span> <u>No. of Pages :</u> </span><%=elem.pages%></p>
+           <p><span> <u>Year of Publication :</u> </span><%=elem.year%></p>
+      
+
+            <button class="b"><a class="btn" href="/delete/<%=i%>">Delete</a></button>
+            <button><a class="btn" href="/update/<%=i%>">Update</a></button>
+
+          </div>
+        <%})%>
+</div>
+
+<%-include("partials/footer.ejs")%>

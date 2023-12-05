@@ -1,0 +1,59 @@
+a{
+    color: rgb(60, 153, 190);
+    padding-left: 40%;
+    font-size: 20px;
+}
+button a{
+  color: white;
+  padding-left: 0;
+}
+span{
+    color: darkblue;
+}
+h1{
+  text-align: center;
+  padding-top: 30px;
+}
+.para{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  gap: 25px;
+  padding-bottom: 30px;
+}
+.para p{
+  width: 60%;
+  text-align: justify;
+  padding-left: 0;
+  
+}
+.line{
+  width: 5px;
+  height: 120px;
+  background-color: brown;
+}
+h2{
+  padding-left: 30px;
+  font-size: 28px;
+
+}
+p{
+  width: 90%;
+  text-align: justify;
+  padding-left: 5%;
+  color: grey;
+  font-size: 20px;
+}
+button{
+   margin-bottom: 5%;
+   margin-left: 50%;
+}
+button{
+  background-color: rgb(43, 114, 200);
+  border: none;
+  margin-left: 8%;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 40px;
+}

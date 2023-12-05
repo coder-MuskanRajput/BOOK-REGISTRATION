@@ -1,0 +1,34 @@
+<%-include("partials/header.ejs")%>
+<%-include("partials/nav.ejs")%>
+<link rel="stylesheet" href="/stylesheets/register.css">
+<div>
+       <form action="/update/<%=idx%>" method="post">
+         <h2>Update your book</h2>
+         <span><input type="text" name="author" placeholder="Author name" value="<%=upda.author%>"></span>
+         <span><select name="country" id="">
+           <option value="">Choose Country</option>
+           <% countryNames.forEach(function(c){ %>
+   
+             <option <%= upda.country === c ? "selected" : "" %> value="<%= c %>"><%= c %></option>
+          <% }) %>
+         </select></span>
+         <span><input type="text" name="img" placeholder="Image link" value="<%=upda.img%>"></span>
+         <span><select name="language" id="">
+           <option value="">Choose Language</option>
+
+          <% languageNames.forEach(function(l){ %>
+   
+             <option <%= upda.language === l.name ? "selected" : ""%> value="<%= l.name %>"><%= l.name %></option>
+          <% }) %>
+         </select></span>
+         <span><input type="text" name="title" placeholder="Title" value="<%=upda.title%>"></span>
+         <span><input type="number" name="pages" placeholder="Pages" value="<%=upda.pages%>"></span>
+
+         <span><input type="number" name="year" placeholder="Year of Publication" value="<%=upda.year%>"></span>
+
+
+         <button class="submit">Update</button>
+       </form>
+      
+      </div>
+<%-include("partials/footer.ejs")%>

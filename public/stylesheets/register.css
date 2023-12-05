@@ -1,0 +1,43 @@
+div{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://imgs.search.brave.com/TVkEj5tcPF0jlbbswMJ464OE_kelpH19UychTX1nlHE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9v/bGQtYm9vay1vcGVu/LWRhcmstd29vZC1i/YWNrZ3JvdW5kXzEz/NzMtNTgxLmpwZz9z/aXplPTYyNiZleHQ9/anBn);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+form{
+    width: 500px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vmax;
+    padding: 2vmax 1vmax;
+    border-radius: 1vmax;
+    border: 1px solid green;
+    box-shadow: 1px 0 10px green;
+}
+input , select{
+    width: 100%;
+    border-radius: 1vmax;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+.submit{
+    color: white;
+    font-size: 1.2vmax;
+}
+button{
+    background-color: rgb(43, 114, 200);
+    border: none;
+    margin-left: 8%;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 40px;
+  }

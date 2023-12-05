@@ -1,0 +1,36 @@
+<%-include("partials/header.ejs")%>
+<%-include("partials/nav.ejs")%>
+<link rel="stylesheet" href="/stylesheets/register.css">
+<div>
+       <form action="/register" method="post">
+         <h2>Register your book</h2>
+         <span><input type="text" name="author" placeholder="Author name"></span>
+         <span><select name="country" id="">
+           <option value="">Choose Country</option>
+           <% countryNames.forEach(function(c){ %>
+   
+             <option value="<%= c %>"><%= c %></option>
+          <% }) %>
+         </select></span>
+         <span><input type="text" name="img" placeholder="Image link"></span>
+         <span><select name="language" id="">
+           <option value="">Choose Language</option>
+
+          <% languageNames.forEach(function(l){ %>
+   
+             <option value="<%= l.name %>"><%= l.name %></option>
+          <% }) %>
+         </select></span>
+         <span><input type="text" name="title" placeholder="Title"></span>
+         <span><input type="number" name="pages" placeholder="Pages"></span>
+
+         <span><input type="number" name="year" placeholder="Year of Publication"></span>
+
+        
+
+         <button class="submit">Submit</button>
+       </form>
+      
+      </div>
+      <script src="/javascripts/register.js"></script>
+<%-include("partials/footer.ejs")%>
